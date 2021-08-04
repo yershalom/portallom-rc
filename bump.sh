@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -ex
 
-npm run bumpVersion
-
 BRANCH=$1
 BUILD_NUMBER=$2
 
