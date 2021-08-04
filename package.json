@@ -1,6 +1,9 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "bumpVersion": "lerna version"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }
