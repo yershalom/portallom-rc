@@ -12,7 +12,7 @@ case $BRANCH_NAME in
     VERSION_TYPE=patch
     ;;
   main)
-    VERSION_TYPE=master-$(lerna changed --json | jq .[].version)
+    VERSION_TYPE=master-$(lerna changed --json | jq -r .[].version)
     ;;
   *)
     echo "bad branch name ${BRANCH}"
