@@ -13,7 +13,7 @@ case $BRANCH_NAME in
   develop)
     VERSION_TYPE=patch
     ;;
-  master)
+  main)
     VERSION_TYPE=master-$(lerna changed --json | jq .[].version)
     ;;
   *)
