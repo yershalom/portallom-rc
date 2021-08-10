@@ -19,8 +19,8 @@ case $BRANCH_NAME in
     exit 1
     ;;
 esac
-git config --global user.email "mcas@microsoft.com"
-git config --global user.name "Portallom Pipeline"
+#git config --global user.email "mcas@microsoft.com"
+#git config --global user.name "Portallom Pipeline"
 git checkout "${BRANCH_NAME}"
 
 yarn bumpVersion -y -m "[SKIP CI] bumped ${VERSION_TYPE} from branch ${BRANCH_NAME} with build number ${BUILD_NUMBER}" ${VERSION_TYPE} || exit 1
